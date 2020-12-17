@@ -1,0 +1,104 @@
+:root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black); 
+    font-family: 'Times New Roman', Times, serif;
+    color: white
+}
+
+/*HEADER CONTAINER CONTENT*/
+
+header .container {
+    width: 100%;
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*LEFT MENU HEADER CONTAINER*/
+
+header .left-menu {
+    margin: 10px 0 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+header .left-menu .logo {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+header .left-menu nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    transition: 0.1s;
+}
+
+header .left-menu nav a:hover {
+    color: #c4c4c3;
+}
+
+/*RIGHT MENU HEADER CONTAINER*/
+
+header .right-menu {
+    margin: 10px 50px 0 0;
+}
+
+header .right-menu a img {
+    height: 24px;
+    margin-left: 20px;
+    transition: 0.1s;
+}
+
+header .right-menu a img:hover {
+    opacity: 0.6;
+}
+
+/*Main Banner*/
+
+.banner-main {
+    position: absolute;
+}
+
+.banner-container {
+    margin-left: 50px;
+}
+
+.main-movie {
+    font-size: 22px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/Img/poster.jpg');
+
+    height: 70vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .movie-description {
+    margin-bottom: 40px;
+}
+
+.movie-title {
+    font-size: 62px;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 5px 10px;
+}
