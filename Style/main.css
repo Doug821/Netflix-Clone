@@ -17,13 +17,18 @@ body {
 
 /*HEADER CONTAINER CONTENT*/
 
-header .container {
+header #container {
     width: 100%;
+    padding-top: 6px;
+    padding-bottom: 16px;
+
+    transition: all 0.2s;
 
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 10;
 }
 
 /*LEFT MENU HEADER CONTAINER*/
@@ -34,10 +39,13 @@ header .left-menu {
     align-items: center;
 }
 
-header .left-menu .logo {
+header .left-menu .logo-desktop {
     height: 40px;
-    margin-left: 10px;
     margin-right: 40px;
+}
+
+header .left-menu .logo-mobile {
+    display: none;
 }
 
 header .left-menu nav a {
@@ -67,6 +75,11 @@ header .right-menu a img:hover {
     opacity: 0.6;
 }
 
+header .right-menu i {
+    font-size: 24px;
+    color: #fff
+}
+
 /*Main Banner*/
 
 .banner-main {
@@ -79,9 +92,9 @@ header .right-menu a img:hover {
 
 .main-movie {
     font-size: 22px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/Img/poster.jpg');
-
-    height: 70vh;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, black 20%);
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/Img/Thumbnails/poster1.jpg');
+    height: 100vh;
     background-size: cover;
 
     display: flex;
@@ -95,10 +108,101 @@ header .right-menu a img:hover {
 }
 
 .movie-title {
-    font-size: 62px;
+    height: 90px;
     margin-bottom: 30px;
 }
 
-.button {
-    padding: 5px 10px;
+.main-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 2%;
+    margin-right: 2%;
+    color: #000;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 15px 30px;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.secondary-button {
+    background-color: rgba(123, 123, 123, 0.4);
+    border: none;
+    border-radius: 2%;
+    color: #fff;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 15px 30px;
+
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.main-button:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.secondary-button:hover {
+    background-color: rgba(123, 123, 123, 0.2);
+}
+
+.buttons i {
+    margin-right: 8px;
+}
+
+.carousel-container {
+    height: 100%;
+    width: 100%;
+    margin-top: -70px;
+    margin-bottom: 100px;
+    padding: 0 50px;
+    display: block;
+}
+
+.carousel-container .carousel-title {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+}
+
+@media(max-width: 836px) {
+    header {
+        display: flex;
+    }
+
+    header #container {
+        padding: 2px 0 12px 0;
+    }
+
+    header .logo-desktop {
+        display: none;
+    }
+
+    header .left-menu .logo-mobile {
+        display: inline;
+        
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+
+    .left-menu nav a {
+        font-size: 14px;
+    }
+
+    .main-movie {
+        background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/Img/Thumbnails/mobile-poster1.jpg');
+        background-size: cover;
+    }
+
+    .movie-title {
+        height: 70px;
+        margin: 30px 0;
+    }
 }
