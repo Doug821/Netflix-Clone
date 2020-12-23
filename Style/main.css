@@ -105,11 +105,18 @@ header .right-menu i {
 
 .main-movie .movie-description {
     margin-bottom: 40px;
+
+    max-width: 700px;
+    overflow-wrap: break-word;
 }
 
 .movie-title {
     height: 90px;
     margin-bottom: 30px;
+}
+
+.add-button {
+    display: none;
 }
 
 .main-button {
@@ -123,7 +130,12 @@ header .right-menu i {
     font-size: 16px;
     font-weight: 700;
 
-    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 135px;
 
     cursor: pointer;
     transition: 0.2s ease all;
@@ -139,7 +151,12 @@ header .right-menu i {
     font-size: 16px;
     font-weight: 700;
 
-    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 200px;
 
     cursor: pointer;
     transition: 0.2s ease all;
@@ -151,6 +168,12 @@ header .right-menu i {
 
 .secondary-button:hover {
     background-color: rgba(123, 123, 123, 0.2);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .buttons i {
@@ -169,6 +192,8 @@ header .right-menu i {
 .carousel-container .carousel-title {
     margin: 0 0 15px 0;
     font-size: 12px;
+    position: relative;
+    z-index: 9;
 }
 
 @media(max-width: 836px) {
@@ -205,4 +230,5 @@ header .right-menu i {
         height: 70px;
         margin: 30px 0;
     }
+
 }

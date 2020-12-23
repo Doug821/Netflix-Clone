@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#141414">
+
     <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/mobile.css">
     <!--owl css-->
     <link rel="stylesheet" href="Style/Owl/owl.carousel.min.css">
     <link rel="stylesheet" href="Style/Owl/owl.theme.default.min.css">
@@ -18,12 +21,15 @@
             <div class="left-menu">
                 <img src="Img//Icons/Logo.png" alt="Netflix" class="logo-desktop">
                 <img src="Img//Icons/netflix-1.svg" alt="Netflix" class="logo-mobile">
-                <nav>
-                    <a href="#">Início</a>
-                    <a href="#">Séries</a>
-                    <a href="#">Filmes</a>
-                    <a href="#">Documentários</a>
-                </nav>
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="#minha-lista">Minha lista</a>
+                        <a href="#home">Início</a>
+                        <a href="#">Séries</a>
+                        <a href="#">Filmes</a>
+                        <a href="#documentarios">Documentários</a>
+                    </nav>
+                </div>
             </div>
             <div class="right-menu">
                 <nav>
@@ -38,29 +44,46 @@
     <main>
         <div class="main-movie">
             <div class="banner-container">
-                <div>
-                    <img src="Img/Icons/aNOWJOfaLlSZlQ93mCz4bsrjHm2.png" class="movie-title" alt="THE QUEEN'S GAMBIT">
+                <img src="Img/Icons/aNOWJOfaLlSZlQ93mCz4bsrjHm2.png" class="movie-title" alt="THE QUEEN'S GAMBIT">
+                <div class="movie-description">In a Kentucky orphanage in the 1950s, a young girl discovers an
+                    astonishing talent for chess while struggling with addiction.
                 </div>
-                <p class="movie-description">In a Kentucky orphanage in the 1950s, a young girl discovers an astonishing
-                    <br> talent for chess while struggling with addiction.
-                </p>
                 <div class="buttons">
-                    <button role="button" class="main-button">
+                    <div class="add-button">
+                        <i class="fas fa-plus"></i>
+                        <p>My list</p>
+                    </div>
+                    <div class="main-button">
                         <i class="fas fa-play"></i>
                         Watch
-                    </button>
-                    <button role="button" class="secondary-button">
+                    </div>
+                    <div class="secondary-button">
                         <i class="fas fa-info-circle"></i>
-                        More Information
-                    </button>
+                        <p>More Information</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <div class="content-wrapper">
-
-
+        <div class="carousel-container">
+            <div class="carousel-title">
+                <h1>
+                    My list
+                </h1>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="Img/Thumbnails/thumb25.jpg" alt="The Dark Knight"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb26.jpg" alt="The Schindler's List"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb27.jpg" alt="Inside Bill's Brain"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb28.jpg" alt="10000 BC"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb29.jpg" alt="Jurassic World"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb30.jpg" alt="What Happened to Monday?"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb31.jpg" alt="Saving Private Ryan"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb32.jpg" alt="Miracle in Cell Number 7"></div>
+            </div>
+        </div>
         <div class="carousel-container">
             <div class="carousel-title">
                 <h1>Trending now</h1>
@@ -82,40 +105,41 @@
         </div>
         <div class="carousel-container">
             <div class="carousel-title">
-                <h1>Teen dramas for tv</h1>
+                <h1>Netflix originals</h1>
             </div>
             <div class="owl-carousel owl-theme">
-                <div class="item"><img src="Img/Thumbnails/thumb1.jpg" alt="A California Christmas"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb2.jpg" alt="FRIENDS"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb3.jpg" alt="The Umberlla Academy"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb4.jpg" alt="Hilda"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb5.jpg" alt="Tiny Pretty Things"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb6.jpg" alt="The legend of Korra"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb7.jpg" alt="Cobra Kai"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb8.jpg" alt="Justice League"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb9.jpg" alt="The Good Place"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb10.jpg" alt="Teen Wolf"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb11.jpg" alt="Suits"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb12.jpg" alt="Virgin River"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb1.jpg" alt="The Worst Witch"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb2.jpg" alt="Lost in Space"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb3.jpg" alt="Just Another Christmas"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb4.jpg" alt="Tiny Pretty Things"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb5.jpg" alt="Alexa & Katie"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb6.jpg" alt="The Umberlla Academy"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb7.jpg" alt="Cobra Kai"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb8.jpg" alt="A Series of Unfortunate Events"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb9.jpg" alt="Dash & Lily"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb10.jpg" alt="Star Trek Discovery"></div>
+                <div class="item"><img src="Img/Thumbnails/longThumb11.jpg" alt="Locke & Key"></div>
             </div>
         </div>
         <div class="carousel-container">
+            <div class="carousel-title">
+                <h1>Teen dramas for tv</h1>
+            </div>
             <div class="owl-carousel owl-theme">
-                <div class="item"><img src="Img/Thumbnails/thumb1.jpg" alt="A California Christmas"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb2.jpg" alt="FRIENDS"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb3.jpg" alt="The Umberlla Academy"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb4.jpg" alt="Hilda"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb5.jpg" alt="Tiny Pretty Things"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb6.jpg" alt="The legend of Korra"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb7.jpg" alt="Cobra Kai"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb8.jpg" alt="Justice League"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb9.jpg" alt="The Good Place"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb10.jpg" alt="Teen Wolf"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb11.jpg" alt="Suits"></div>
-                <div class="item"><img src="Img/Thumbnails/thumb12.jpg" alt="Virgin River"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb13.jpg" alt="Riverdale"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb14.jpg" alt="Gilmore Girls"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb15.jpg" alt="Atypical"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb16.jpg" alt="Grand Army"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb17.jpg" alt="On My Block"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb18.jpg" alt="The A List"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb19.jpg" alt="Teenage Bounty Hunters"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb20.jpg" alt="Locke & Key"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb21.jpg" alt="Degrassi Next Class"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb22.jpg" alt="The Order"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb23.jpg" alt="Everything Sucks"></div>
+                <div class="item"><img src="Img/Thumbnails/thumb24.jpg" alt="Baby"></div>
             </div>
         </div>
-
     </div>
     <script src="https://kit.fontawesome.com/275158fd78.js" crossorigin="anonymous"></script>
     <script src="Js/Owl/jquery.min.js"></script>
