@@ -32,6 +32,11 @@
     .left-menu .nav-wrapper nav a {
         margin-right: 1rem;
     }
+    
+
+    .left-menu nav a[href="#minha-lista"] {
+        display: inline-block;
+    }
 
     .left-menu nav a[href="#home"], a[href="#documentarios"]{
         display: none;

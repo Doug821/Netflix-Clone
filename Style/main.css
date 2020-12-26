@@ -80,6 +80,10 @@ header .right-menu i {
     color: #fff
 }
 
+.left-menu nav a[href="#minha-lista"]{
+    display: none;
+}
+
 /*Main Banner*/
 
 .banner-main {
